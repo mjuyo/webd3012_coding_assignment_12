@@ -12,10 +12,10 @@ const StyledText = styled.text<Partial<TextProps>>`
     opacity: ${(props) => (props.disabled ? 0.7 : 1)};
 `;
 
-const Text: React.FC<TextProps> = ({ content, color, disabled, fontSize }) => (
+const TextElement: React.FC<TextProps> = ({ content, color, disabled, fontSize }) => (
     <StyledText color={color} disabled={disabled} fontSize={fontSize}>
         {content}
     </StyledText>
 );
 
-export default Text;
+export default TextElement;

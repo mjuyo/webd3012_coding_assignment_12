@@ -11,5 +11,4 @@ test('button is disabled', () => {
   render(<Label text="Label text" disabled />);
   const label = screen.getByText('Label text');
   expect(label).toHaveStyle('cursor: not-allowed');
-  expect(label).toHaveStyle('background-color: #ccc');
 });

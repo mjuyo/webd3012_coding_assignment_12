@@ -26,7 +26,7 @@ const Template: StoryFn<LabelProps> = (args) => <Label {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     text: "Label text",
-    color: "white",
+    color: "black",
     fontSize: "18px",
     disabled: false,
 };
@@ -34,7 +34,7 @@ Default.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
     text: "Label text",
-    color: "black",
+    color: "#b9b9b9",
     fontSize: "18px",
     disabled: true,
 };

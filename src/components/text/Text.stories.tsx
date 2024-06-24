@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Text from './Text';
+import TextElement from './Text';
 import { TextProps } from './Text.types';
 
 export default {
     title: "Components/Text",
-    component: Text,
+    component: TextElement,
     argTypes: {
         color: { control: "color" },
         fontSize: { control: "text" },
@@ -19,9 +19,9 @@ export default {
         }
       },
       tags: ['autodocs'],
-} as Meta<typeof Text>;
+} as Meta<typeof TextElement>;
 
-const Template: StoryFn<TextProps> = (args) => <Text {...args} />;
+const Template: StoryFn<TextProps> = (args) => <TextElement {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
